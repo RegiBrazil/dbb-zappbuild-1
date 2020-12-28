@@ -45,7 +45,8 @@ sortedList.each { buildFile ->
 			     .executable(linkEdit)
 			     .maxRC(maxRC)
 			     .execute()
-	
+
+    println "**Regi rc: ${rc}  maxRC: ${maxRC}  "	
     if (rc > maxRC) {
 	    String errorMsg = "*! The build return code ($rc) for $buildFile exceeded the maximum return code allowed ($maxRC)"
 		println(errorMsg)
